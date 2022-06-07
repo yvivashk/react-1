@@ -42,12 +42,27 @@
 
 .list {
   margin: 0;
-  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
   display: flex;
   justify-content: space-around;
   list-style-type: none;
 }
 
+.header {
+  background-color: lightgreen;
+}
+
 .link {
   text-decoration: none;
+}
+
+.main {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: lightcoral;
+}
+
+.footer {
+  background-color: lightblue;
 }
