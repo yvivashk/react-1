@@ -1,47 +1,15 @@
 import React, { Component } from "react";
 import "./App.css";
+import Header from "./components/Header";
+import Profile from "./components/Profile";
+import Sidebar from "./components/Sidebar";
 
 const App = () => {
   return (
     <div className="content-wrapper">
-      <header className="header">
-        <img
-          src="cloud-computing.png"
-          width="100"
-          height="100"
-          alt="логотип"
-        ></img>
-      </header>
-      <section className="sidebar-menu">
-        <ul className="list">
-          <li>
-            <a className="link" href="#">
-              Profile
-            </a>
-          </li>
-          <li>
-            <a className="link" href="#">
-              Messages
-            </a>
-          </li>
-          <li>
-            <a className="link" href="#">
-              News
-            </a>
-          </li>
-          <li>
-            <a className="link" href="#">
-              Music
-            </a>
-          </li>
-          <li>
-            <a className="link" href="#">
-              Settings
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section className="main"></section>
+      <Header />
+      <Sidebar />
+      <Profile />
     </div>
   );
 };
