@@ -1,0 +1,19 @@
+.sidebar-menu {
+  grid-column: 1/2;
+  background-color: #06B667;
+}
+
+.list {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.list li:nth-child(4) {
+  margin-bottom: 40px;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+}

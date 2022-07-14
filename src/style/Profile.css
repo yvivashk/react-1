@@ -1,0 +1,26 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 200px);
+  gap: 20px;
+}
+
+.images-wrapper {
+  width: 100%;
+  height: 200px;
+}
+
+.user-wrapper {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: 200px;
+}
+
+.avatar {
+  grid-column: 1/2;
+}
+
+.user-list {
+  grid-column: 2/3;
+  display: grid;
+}
