@@ -1,16 +1,17 @@
 import './Post.css';
 
-const Post = () => {
+const Post = (props) => {
   return (
-    <div class="post-wrapper">
+    <div className="post-wrapper">
       <img
-        class="avatar-image"
-        src="https://www.1zoom.ru/big2/946/289597-frederika.jpg"
+        className="avatar-image"
+        src={props.adress}
         width="50px"
         height="50px"
         alt="изображение синелицей девушки"
       />
-      <p>Текст поста</p>
+      <p className="post-message">{props.message}</p>
+      <p className="post-likes">Likes - {props.count}</p>
     </div>
   );
 }
