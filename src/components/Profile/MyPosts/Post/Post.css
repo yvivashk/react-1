@@ -1,0 +1,8 @@
+.post-wrapper {
+  display: grid;
+  grid-template-columns: repeat(9, 100px);
+}
+
+.avatar-image {
+  border-radius: 50%;
+}

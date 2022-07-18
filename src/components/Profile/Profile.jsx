@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import '../Profile/Profile.css';
+import MyPosts from "./MyPosts/MyPosts";
 
 const Profile = () => {
   return (
@@ -28,9 +29,7 @@ const Profile = () => {
           <li>Web Site:</li>
         </ul>
       </div>
-      <div className="post-wrapper">
-        <h3>My posts</h3>
-      </div>
+      <MyPosts />
     </section>
   );
 };
