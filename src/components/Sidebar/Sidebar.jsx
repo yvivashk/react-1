@@ -1,33 +1,33 @@
-import React, { Component } from "react";
+import React from 'react';
 import '../Sidebar/Sidebar.css';
 
-const Sidebar = () => {
+const Sidebar = (props) => {
   return (
     <section className="sidebar-menu">
       <ul className="list">
         <li>
           <a className="link" href="#">
-            Profile
+            Профиль
           </a>
         </li>
         <li>
           <a className="link" href="#">
-            Messages
+            Сообщения
           </a>
         </li>
         <li>
           <a className="link" href="#">
-            News
+            Новости
           </a>
         </li>
         <li>
           <a className="link" href="#">
-            Music
+            Музыка
           </a>
         </li>
         <li>
           <a className="link" href="#">
-            Settings
+            Настройки
           </a>
         </li>
       </ul>

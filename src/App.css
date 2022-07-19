@@ -3,7 +3,7 @@ ul {
   padding: 0;
   list-style-type: none;
 }
-.content-wrapper {
+.app-wrapper {
   width: 1200px;
   margin: 0 auto;
   padding-top: 20px;
@@ -46,4 +46,9 @@ ul {
   to {
     transform: rotate(360deg);
   }
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
 }

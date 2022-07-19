@@ -1,0 +1,9 @@
+.dialogs-wrapper {
+  display: grid;
+  background-color: lightcoral;
+}
+
+.dialogs-title {
+  font-weight: normal;
+  font-size: 20px;
+}
