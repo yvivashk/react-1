@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Profile/Profile.css';
+import './Profile.css';
 import MyPosts from './MyPosts/MyPosts';
 
 const Profile = () => {
