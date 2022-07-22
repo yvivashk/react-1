@@ -4,7 +4,10 @@ import Header from './components/Header/Header';
 import Sidebar from './components/Sidebar/Sidebar';
 import Dialogs from './components/Dialogs/Dialogs';
 import Profile from './components/Profile/Profile';
-import {BrowserRouter, Route} from 'react-router-dom';
+import News from './components/News/News';
+import Music from './components/Music/Music';
+import Settings from './components/Settings/Settings';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 const App = () => {
   return (
@@ -13,8 +16,13 @@ const App = () => {
         <Header/>
         <Sidebar/>
         <section className="main">
-          <Route path="/profile" component={Profile}/>
-          <Route path="/dialogs" component={Dialogs}/>
+          <Routes>
+            <Route path="/dialogs" element={<Dialogs title="DIALOGS"/>}/>
+            <Route path="/profile" element={<Profile/>}/>
+            <Route path="/news" element={<News title="НОВОСТИ"/>}/>
+            <Route path="/music" element={<Music title="МУЗЫКА-МУЗЫКА"/>}/>
+            <Route path="/settings" element={<Settings title="НАСТРОЙКИ"/>}/>
+          </Routes>
         </section>
       </div>
     </BrowserRouter>

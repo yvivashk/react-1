@@ -1,0 +1,10 @@
+.news-wrapper {
+  display: grid;
+  background-color: lightskyblue;
+}
+
+.news-title {
+  font-weight: normal;
+  font-size: 20px;
+  color: black;
+}

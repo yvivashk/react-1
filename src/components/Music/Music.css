@@ -1,0 +1,10 @@
+.music-wrapper {
+  display: grid;
+  background-color: lightgray;
+}
+
+.music-title {
+  font-weight: normal;
+  font-size: 20px;
+  color: black;
+}

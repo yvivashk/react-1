@@ -1,0 +1,10 @@
+.settings-wrapper {
+  display: grid;
+  background-color: lightgoldenrodyellow;
+}
+
+.settings-title {
+  font-weight: normal;
+  font-size: 20px;
+  color: black;
+}

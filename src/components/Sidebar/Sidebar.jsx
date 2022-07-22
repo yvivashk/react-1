@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './Sidebar.css';
 
 const Sidebar = (props) => {
@@ -6,9 +7,9 @@ const Sidebar = (props) => {
     <section className="sidebar-menu">
       <ul className="list">
         <li>
-          <a className="link" href="/profile">
+          <NavLink className="link" to="/profile">
             Профиль
-          </a>
+          </NavLink>
         </li>
         <li>
           <a className="link" href="/dialogs">
@@ -16,17 +17,17 @@ const Sidebar = (props) => {
           </a>
         </li>
         <li>
-          <a className="link" href="#">
+          <a className="link" href="/news">
             Новости
           </a>
         </li>
         <li>
-          <a className="link" href="#">
+          <a className="link" href="/music">
             Музыка
           </a>
         </li>
         <li>
-          <a className="link" href="#">
+          <a className="link" href="/settings">
             Настройки
           </a>
         </li>
