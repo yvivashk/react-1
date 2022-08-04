@@ -1,10 +1,10 @@
 import React from 'react';
-import './News.css';
+import s from './News.module.css';
 
 const News = (props) => {
   return (
-    <section className="news-wrapper">
-      <h3 className="news-title">{props.title}</h3>
+    <section className={s['news-wrapper']}>
+      <h3 className={s['news-title']}>{props.title}</h3>
     </section>
   );
 };

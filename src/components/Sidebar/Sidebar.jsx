@@ -1,35 +1,35 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './Sidebar.css';
+import s from './Sidebar.module.css';
 
-const Sidebar = (props) => {
+const Sidebar = () => {
   return (
-    <section className="sidebar-menu">
-      <ul className="list">
+    <section className={s['sidebar-menu']}>
+      <ul className={s.list}>
         <li>
-          <NavLink className="link" to="/profile">
+          <NavLink className={s.link} to="/profile">
             Профиль
           </NavLink>
         </li>
         <li>
-          <a className="link" href="/dialogs">
+          <NavLink className={s.link} to="/dialogs">
             Сообщения
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a className="link" href="/news">
+          <NavLink className={s.link} to="/news">
             Новости
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a className="link" href="/music">
+          <NavLink className={s.link} to="/music">
             Музыка
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a className="link" href="/settings">
+          <NavLink className={s.link} to="/settings">
             Настройки
-          </a>
+          </NavLink>
         </li>
       </ul>
     </section>

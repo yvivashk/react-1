@@ -1,10 +1,10 @@
 import React from 'react';
-import './Settings.css';
+import s from './Settings.module.css';
 
 const Settings = (props) => {
   return (
-    <section className="settings-wrapper">
-      <h3 className="settings-title">{props.title}</h3>
+    <section className={s['settings-wrapper']}>
+      <h3 className={s['settings-title']}>{props.title}</h3>
     </section>
   );
 };

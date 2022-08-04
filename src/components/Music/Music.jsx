@@ -1,10 +1,10 @@
 import React from 'react';
-import './Music.css';
+import s from './Musuc.module.css';
 
 const Music = (props) => {
   return (
-    <section className="music-wrapper">
-      <h3 className="music-title">{props.title}</h3>
+    <section className={s['music-wrapper']}>
+      <h3 className={s['music-title']}>{props.title}</h3>
     </section>
   );
 };
