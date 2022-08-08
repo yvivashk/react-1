@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import s from './Dialogs.module.css';
 
 const Dialogs = (props) => {
@@ -8,12 +9,24 @@ const Dialogs = (props) => {
       <div className={s['users-messages-wrapper']}>
         <section className={s['users-wrapper']}>
           <ul className={s['users-list']}>
-            <li>Андрей</li>
-            <li>Саша</li>
-            <li>Дмитрий</li>
-            <li>Юрий</li>
-            <li>Валерий</li>
-            <li>Николай</li>
+            <li>
+              <NavLink to='/dialogs/1'>Андрей</NavLink>
+            </li>
+            <li>
+              <NavLink to='/dialogs/2'>Саша</NavLink>
+            </li>
+            <li>
+              <NavLink to='/dialogs/3'>Дмитрий</NavLink>
+            </li>
+            <li>
+              <NavLink to='/dialogs/4'>Юрий</NavLink>
+            </li>
+            <li>
+              <NavLink to='/dialogs/5'>Валерий</NavLink>
+            </li>
+            <li>
+              <NavLink to='/dialogs/6'>Николай</NavLink>
+            </li>
           </ul>
         </section>
         <section className={s['messages-wrapper']}>

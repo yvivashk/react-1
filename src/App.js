@@ -17,7 +17,7 @@ const App = () => {
         <Sidebar/>
         <section className="main">
           <Routes>
-            <Route path="/dialogs" element={<Dialogs title="DIALOGS"/>}/>
+            <Route path="/dialogs/*" element={<Dialogs title="DIALOGS"/>}/>
             <Route path="/profile" element={<Profile/>}/>
             <Route path="/news" element={<News title="НОВОСТИ"/>}/>
             <Route path="/music" element={<Music title="МУЗЫКА-МУЗЫКА"/>}/>
