@@ -21,23 +21,26 @@ const Message = (props) => {
 
 const Dialogs = (props) => {
 
-  let dialogsData = [
-    {id: 1, name: 'Андрей'},
-    {id: 2, name: 'Саша'},
-    {id: 3, name: 'Дмитрий'},
-    {id: 4, name: 'Юрий'},
-    {id: 5, name: 'Валерий'},
-    {id: 6, name: 'Николай'},
+  let dialogs = [
+    { id: 1, name: 'Андрей' },
+    { id: 2, name: 'Саша' },
+    { id: 3, name: 'Дмитрий' },
+    { id: 4, name: 'Юрий' },
+    { id: 5, name: 'Валерий' },
+    { id: 6, name: 'Николай' },
   ];
 
-  let messagesData = [
-    {id: 1, message: 'Hi'},
-    {id: 2, message: 'How are you?!'},
-    {id: 3, message: 'Yo'},
-    {id: 4, message: 'I\'m fine!'},
-    {id: 5, message: 'Have a nice weekend!!!'},
-    {id: 6, message: 'WTF'},
+  let messages = [
+    { id: 1, message: 'Hi' },
+    { id: 2, message: 'How are you?!' },
+    { id: 3, message: 'Yo' },
+    { id: 4, message: 'I\'m fine!' },
+    { id: 5, message: 'Have a nice weekend!!!' },
+    { id: 6, message: 'WTF' },
   ];
+
+  let dialogsElements = dialogs.map(d => <DialogItem name={d.name} id={d.id} />);
+  let messagesElements = messages.map(m => <Message message={m.message} id={m.id} />);
 
   return (
     <section className={s['dialogs-wrapper']}>
@@ -45,14 +48,12 @@ const Dialogs = (props) => {
       <div className={s['users-messages-wrapper']}>
         <section className={s['users-wrapper']}>
           <ul className={s['users-list']}>
-            <DialogItem name={dialogsData[0].name} id={dialogsData[0].id} />
-            <DialogItem name={dialogsData[1].name} id={dialogsData[1].id} />
+            { dialogsElements }
           </ul>
         </section>
         <section className={s['messages-wrapper']}>
           <ul className={s['messages-list']}>
-            <Message message={messagesData[0].message} id={messagesData[0].id} />
-            <Message message={messagesData[1].message} id={messagesData[1].id} />
+            { messagesElements }
           </ul>
         </section>
       </div>

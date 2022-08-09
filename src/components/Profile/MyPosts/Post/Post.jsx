@@ -2,7 +2,7 @@ import './Post.css';
 
 const Post = (props) => {
   return (
-    <div className="post-wrapper">
+    <div className="post-wrapper" id={props.id}>
       <img
         className="avatar-image"
         src={props.adress}
@@ -11,7 +11,7 @@ const Post = (props) => {
         alt="изображение синелицей девушки"
       />
       <p className="post-message">{props.message}</p>
-      <p className="post-likes">Likes - {props.count}</p>
+      <p className="post-likes">Likes - {props.likesCount}</p>
     </div>
   );
 }
