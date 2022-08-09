@@ -21,7 +21,13 @@
 }
 
 .users-list {
-  list-style-type: circle;
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
 }
 
 .messages-wrapper {
