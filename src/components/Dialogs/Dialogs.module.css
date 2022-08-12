@@ -24,12 +24,6 @@
   list-style-type: none;
 }
 
-.link {
-  text-decoration: none;
-  color: #000000;
-  font-size: 18px;
-}
-
 .messages-wrapper {
   grid-column: 2/3;
   background-color: lightblue;

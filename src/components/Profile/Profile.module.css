@@ -1,26 +1,6 @@
-.main {
+/* .main {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 150px 200px auto;
   gap: 20px;
-}
-
-.images-wrapper {
-  grid-row: 1/2;
-}
-
-.user-wrapper {
-  display: grid;
-  grid-row: 2/3;
-  grid-template-columns: 150px 1fr;
-  grid-template-rows: 200px;
-}
-
-.avatar {
-  grid-column: 1/2;
-}
-
-.user-list {
-  grid-column: 2/3;
-  display: grid;
-}
+} */
