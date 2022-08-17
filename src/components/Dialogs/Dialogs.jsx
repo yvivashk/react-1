@@ -5,26 +5,8 @@ import Message from "./Message/Message";
 
 const Dialogs = (props) => {
 
-  let dialogs = [
-    { id: 1, name: 'Андрей' },
-    { id: 2, name: 'Саша' },
-    { id: 3, name: 'Дмитрий' },
-    { id: 4, name: 'Юрий' },
-    { id: 5, name: 'Валерий' },
-    { id: 6, name: 'Николай' },
-  ];
-
-  let messages = [
-    { id: 1, message: 'Hi' },
-    { id: 2, message: 'How are you?!' },
-    { id: 3, message: 'Yo' },
-    { id: 4, message: 'I\'m fine!' },
-    { id: 5, message: 'Have a nice weekend!!!' },
-    { id: 6, message: 'WTF' },
-  ];
-
-  let dialogsElements = dialogs.map(d => <DialogItem name={d.name} id={d.id} />);
-  let messagesElements = messages.map(m => <Message message={m.message} id={m.id} />);
+  let dialogsElements = props.dialogs.map(d => <DialogItem name={d.name} id={d.id} />);
+  let messagesElements = props.messages.map(m => <Message message={m.message} id={m.id} />);
 
   return (
     <section className={s['dialogs-wrapper']}>
