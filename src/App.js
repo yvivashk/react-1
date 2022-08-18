@@ -17,8 +17,8 @@ const App = (props) => {
         <Sidebar/>
         <section className="main">
           <Routes>
-            <Route path="/dialogs" element={<Dialogs title="DIALOGS" dialogs={props.dialogs} messages={props.messages}/>}/>
-            <Route path="/profile" element={<Profile posts={props.posts}/>}/>
+            <Route path="/dialogs" element={<Dialogs title="DIALOGS" state={props.state.dialogsPage} />}/>
+            <Route path="/profile" element={<Profile state={props.state.profilePage}/>}/>
             <Route path="/news" element={<News title="НОВОСТИ"/>}/>
             <Route path="/music" element={<Music title="МУЗЫКА-МУЗЫКА"/>}/>
             <Route path="/settings" element={<Settings title="НАСТРОЙКИ"/>}/>
